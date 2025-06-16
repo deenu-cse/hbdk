@@ -72,7 +72,6 @@ export default function Home() {
         origin: { x: 1, y: yPos },
       });
     });
-
     if (buttonText === "Welcome to Khushi's Birthday 🎉") {
       setButtonText("Turn on the lights! 💡");
       setTimeout(() => setIsTransitioning(false), 4000);
