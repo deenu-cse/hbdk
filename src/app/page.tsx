@@ -1,13 +1,12 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const [lightOn, setLightOn] = useState(false);
-  const [musicPlaying, setMusicPlaying] = useState(false);
+  // const [musicPlaying, setMusicPlaying] = useState(false);
   const [isDecorated, setIsDecorated] = useState(false);
   const [showBalloons, setShowBalloons] = useState(false);
   const [showFriends, setShowFriends] = useState(false);
@@ -80,7 +79,7 @@ export default function Home() {
       setButtonText("Play Music 🎶");
       setTimeout(() => setIsTransitioning(false), 4000);
     } else if (buttonText === "Play Music 🎶") {
-      setMusicPlaying(true);
+      // setMusicPlaying(true);
       audioRef.current = new Audio('/constent/hbd.mp3');
       audioRef.current.loop = true;
       audioRef.current.play();
