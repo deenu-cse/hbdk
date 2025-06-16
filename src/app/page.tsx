@@ -199,7 +199,7 @@ export default function Home() {
                     '--dance-x': `${friend.danceX}px`,
                     '--dance-y': `${friend.danceY}px`,
                     '--dance-speed': `${friend.danceSpeed}s`,
-                  }}
+                  } as React.CSSProperties}
                 />
               ))}
               {showCake && !isDancing && (
